@@ -101,7 +101,7 @@ If you are using our code, datasets, or model, please use the following citation
     author = {Wayment-Steele, Hannah K. and El Nesr, Gina and Hettiarachchi, Ramith and Kariyawasam, Hasindu and Ovchinnikov, Sergey and Kern, Dorothee},
     title = {Learning millisecond protein dynamics from what is missing in NMR spectra},
     year = {2025},
-    doi = {https://doi.org/10.1101/2025.03.19.642801},
+    doi = {10.1101/2025.03.19.642801},
     journal = {bioRxiv}
 }
 ```
