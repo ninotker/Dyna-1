@@ -4,7 +4,7 @@
 
 ![image](assets/dyna1.png)
 
-Dyna-1 is a model introduced in our paper, ["Learning millisecond protein dynamics from what is missing in NMR spectra"](PAPER_LINK_WHEN_READY).
+Dyna-1 is a model introduced in our paper, ["Learning millisecond protein dynamics from what is missing in NMR spectra"](https://www.biorxiv.org/content/10.1101/2025.03.19.642801v1).
 
 Given a sequence and/or structure, Dyna-1 will predict the probability that each residue experiences micro-millisecond motions.
 
@@ -101,7 +101,7 @@ If you are using our code, datasets, or model, please use the following citation
     author = {Wayment-Steele, Hannah K. and El Nesr, Gina and Hettiarachchi, Ramith and Kariyawasam, Hasindu and Ovchinnikov, Sergey and Kern, Dorothee},
     title = {Learning millisecond protein dynamics from what is missing in NMR spectra},
     year = {2025},
-    doi = {},
+    doi = {https://doi.org/10.1101/2025.03.19.642801},
     journal = {bioRxiv}
 }
 ```
