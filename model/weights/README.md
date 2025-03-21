@@ -4,7 +4,7 @@ To access the model weights, we provide two options.
 
 ## From 🤗HuggingFace
 
-Dyna-1 model weights (for both ESM-3 and ESM-2 versions) can be accessed through <a href='https://huggingface.co/gelnesr/Dyna-1'>gelnesr/Dyna-1</a>. 
+Dyna-1 model weights (for both ESM-3 and ESM-2 versions) can be accessed through HuggingFace at <a href='https://huggingface.co/gelnesr/Dyna-1'>gelnesr/Dyna-1</a>. 
 
 We recommend setting up and using `huggingface-cli` by running the following commands on the command line.
 
