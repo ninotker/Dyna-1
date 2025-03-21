@@ -35,7 +35,7 @@ This package requires PyTorch, ideally with GPU support. For more information, f
 ```
 pip install -r requirements.txt
 ```
-Then, download the model weights and upload them to the `model/weights` folder. More information on how to download them can be found <a href='https://github.com/gelnesr/Dyna-1-public/blob/main/model/weights/README.md'>here</a>. 
+Then, download the model weights and upload them to the `model/weights` folder. The weights can be found on 🤗HuggingFace at <a href='https://huggingface.co/gelnesr/Dyna-1'>gelnesr/Dyna-1</a>. More information on how to download them can be found <a href='https://github.com/gelnesr/Dyna-1-public/blob/main/model/weights/README.md'>here</a>. 
 
 # Inference
 
@@ -83,11 +83,12 @@ set cartoon_putty_scale_max, 10 #max_radius / min_radius
 
 *RelaxDB-CPMG* contains motion labels derived from 10 CPMG relaxation-dispersion datasets curated from literature.
 
-Data formatted for input into Dyna-1 is in `data/RelaxDB_pkls_22jan2025.zip`.
+These datasets are made available on 🤗HuggingFace at <a href='https://huggingface.co/datasets/gelnesr/RelaxDB'>datasets/gelnesr/RelaxDB</a>.
 
-Datasets in json format is in `data/RelaxDB_datasets/`.
-
-See `analysis/` for demo notebooks for visualizing and using datasets to evaluate model outputs.
+In this repo, you can find: 
+- data formatted for input into Dyna-1 is in `data/RelaxDB_pkls_22jan2025.zip`
+- datasets in json format is in `data/RelaxDB_datasets/`
+- demo notebooks for demo notebooks for visualizing and using datasets to evaluate model outputs in `analysis/`
 
 # Training
 
