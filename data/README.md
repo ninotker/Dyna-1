@@ -1,6 +1,6 @@
 # Datasets
 
-We have additionally made the datasets available on 🤗HuggingFace at <a href='https://huggingface.co/datasets/gelnesr/RelaxDB'>gelnesr/Dyna-1</a>. 
+We have additionally made the datasets available on 🤗HuggingFace at <a href='https://huggingface.co/datasets/gelnesr/RelaxDB'>datasets/gelnesr/RelaxDB</a>. 
 
 We recommend downloading them using `huggingface-cli` by running the following commands on the command line:
 ```
