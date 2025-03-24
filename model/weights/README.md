@@ -10,7 +10,7 @@ We recommend setting up and using `huggingface-cli` by running the following com
 
 ```
 pip install -U "huggingface_hub[cli]"
-huggingface-cli download gelnesr/Dyna-1 --include "weights/*" --local-dir model/
+huggingface-cli download gelnesr/Dyna-1 --local-dir "model/weights/"
 ```
 
 Another option is to use the `git clone` to download, set the download directory to `model/weights`. This will require doing the following:
