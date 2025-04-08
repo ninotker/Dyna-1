@@ -130,8 +130,17 @@ class ESM_model(nn.Module):
             logits: evaluated logits from model
         """
         if 'esm3' in self.method:
-            _, hidden_states = self.model(sequence_tokens=input[0], structure_tokens=input[1], sequence_id=mask)
-            logits = self.classifier(hidden_states[self.layer], torch.logical_not(mask)).squeeze()
+                # For ESM-3, process the input tokens and structure tokens.
+            # The model returns a tuple; here we only need the hidden states.
+            _, hidden_states = self.model(
+                sequence_tokens=input[0], 
+                structure_tokens=input[1], 
+                sequence_id=mask
+            )
+            # Extract the hidden state from the specified layer and pass it through the classifier.
+            # The mask is inverted (logical NOT) as expected by the classifier.
+            logits, classifier_hidden_states = self.classifier(hidden_states[self.layer], torch.logical_not(mask), return_hidden_states=True)
+            logits = logits.squeeze()
         elif 'esmc' in self.method:
             _, hidden_states = self.model(sequence_tokens=input, sequence_id=mask)   
             logits = self.classifier(hidden_states[self.layer], torch.logical_not(mask)).squeeze()
